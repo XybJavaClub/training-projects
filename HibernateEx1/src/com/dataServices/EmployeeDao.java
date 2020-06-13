@@ -12,7 +12,9 @@ public class EmployeeDao {
 		//add in java 1.7
 		try (Session session = DatabaseUtil.getSessionFactory().openSession()) {
 			session.beginTransaction();
+			//till this object in Transient
 			Integer id =(Integer)session.save(employee);
+			//now it is in Persistent
 			System.out.println("Employee is created  with Id::"+id);
 			session.getTransaction().commit();
 		} catch (HibernateException e) {
