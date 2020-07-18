@@ -19,7 +19,7 @@ public class Server {
 	{
 		Socket clientSocket = null;
 		ServerSocket serverSocket = null;
-		int port_number = 1111;
+		int port_number = 1234;
 		Server server = new Server();
 		try 
 		{
