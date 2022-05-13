@@ -6,7 +6,7 @@ public class SetterDemoApp {
 
 	public static void main(String[] args) {
 
-		// load the spring configuration file
+		// load the spring configuration files
 		ClassPathXmlApplicationContext context = 
 				new ClassPathXmlApplicationContext("applicationContext.xml");
 		
